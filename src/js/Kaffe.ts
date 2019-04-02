@@ -1,7 +1,20 @@
-abstract class Kaffe{
-    rabat: number;
+export abstract class Kaffe
+{
+    Rabat: number;
 
-    abstract method Pris()
-    method Styrke(Styrke: string)
+    constructor(rabat: number)
+    {
+        this.Rabat = rabat
+    };
+
+    abstract Pris(): number;
+
+    public Styrke(): string{
+        return "Mild"
+    };
+
+    abstract KaffeType(): string;
+
+    
     
 }
